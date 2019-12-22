@@ -37,7 +37,7 @@ public class GuestbookDao {
 			
 			
 		} catch (ClassNotFoundException e) {
-			System.out.println("ï¿½ë±¶ï¿½ì”ªï¿½ì” è¸°ï¿½ æ¿¡ì’•ëµ? ï¿½ë–ï¿½ë™£:" + e);
+			System.out.println("1st error:" + e);
 		} catch (SQLException e) {
 			System.out.println("error:" + e);
 		} finally {
@@ -78,7 +78,7 @@ public class GuestbookDao {
 			
 			
 		} catch (ClassNotFoundException e) {
-			System.out.println("ï¿½ë±¶ï¿½ì”ªï¿½ì” è¸°ï¿½ æ¿¡ì’•ëµ? ï¿½ë–ï¿½ë™£:" + e);
+			System.out.println("1st erro:" + e);
 		} catch (SQLException e) {
 			System.out.println("error:" + e);
 		} finally {
@@ -133,7 +133,7 @@ public class GuestbookDao {
 			}
 			
 		} catch (ClassNotFoundException e) {
-			System.out.println("?“œ?¼?´ë²„ë¡œ?”©?‹¤?Œ¨:" + e);
+			System.out.println("1st errorÂ¨:" + e);
 		} catch (SQLException e) {
 			System.out.println("error:" + e);
 		} finally {
