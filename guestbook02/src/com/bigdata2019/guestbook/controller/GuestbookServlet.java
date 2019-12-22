@@ -24,7 +24,7 @@ public class GuestbookServlet extends HttpServlet {
 		
 		if("insert".equals(action)) {
 			String name = request.getParameter("name");
-			String password = request.getParameter("passward");		
+			String password = request.getParameter("password");		
 			String contents = request.getParameter("contents");		
 		
 			GuestbookVo vo = new GuestbookVo();
@@ -51,7 +51,7 @@ public class GuestbookServlet extends HttpServlet {
 			List<GuestbookVo> list = dao.findAll();
 			
 			request.setAttribute("list", list);
-			RequestDispatcher rd = request.getRequestDispatcher("/WEB-INf/views/index.jsp");
+			RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/index.jsp");
 			rd.forward(request, response);
 		}
 		
