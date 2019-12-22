@@ -6,19 +6,20 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>±Û »èÁ¦</title>
+<title>ê¸€ ì‚­ì œ</title>
 </head>
 <body>
-	<form method="post" action="/guestbook02/view/delete.jsp">
-	<input type='hidden' name="no" value="">
+	<form method="post" action="/guestbook02/gb">
+	<input type='hidden' name="no" value="<%= no %>">
+	<input type='hidden' name="a" value="delete">
 	<table>
 		<tr>
-			<td>ºñ¹Ð¹øÈ£</td>
+			<td>ë¹„ë°€ë²ˆí˜¸</td>
 			<td><input type="password" name="password"></td>
-			<td><input type="submit" value="È®ÀÎ"></td>
-			<td><a href="/guestbook02/gb">¸ÞÀÎÀ¸·Îµ¹¾Æ°¡±â</a></td>
-		</tr>
+			<td><input type="submit" value="í™•ì¸"></td>
+			</tr>
 	</table>
 	</form>
+	<a href="/guestbook02/gb">ë©”ì¸ìœ¼ë¡œ ëŒì•„ê°€ê¸°</a>
 </body>
 </html>
